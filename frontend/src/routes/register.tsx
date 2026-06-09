@@ -44,7 +44,7 @@ const [loading, setLoading] =
 
     const response =
       await fetch(
-        "http://127.0.0.1:8000/auth/register",
+        "https://studygenie-backend-w9am.onrender.com/auth/register",
         {
           method: "POST",
           headers: {

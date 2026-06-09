@@ -53,7 +53,7 @@ function ResetOTPPage() {
 
     const response =
       await fetch(
-        "http://127.0.0.1:8000/auth/verify-reset-otp",
+        "https://studygenie-backend-w9am.onrender.com/auth/verify-reset-otp",
         {
           method: "POST",
           headers: {

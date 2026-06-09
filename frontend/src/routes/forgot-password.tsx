@@ -35,7 +35,7 @@ const [loading, setLoading] =
 
     const response =
       await fetch(
-        "http://127.0.0.1:8000/auth/forgot-password",
+        "https://studygenie-backend-w9am.onrender.com/auth/forgot-password",
         {
           method: "POST",
           headers: {

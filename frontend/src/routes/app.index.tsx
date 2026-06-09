@@ -55,7 +55,7 @@ const [quizStats, setQuizStats] =
   );
 
 fetch(
-  "http://127.0.0.1:8000/analytics/summary",
+  "https://studygenie-backend-w9am.onrender.com/analytics/summary",
   {
     headers: {
       Authorization:
@@ -67,7 +67,7 @@ fetch(
   .then(data => setStats(data));
 
  fetch(
-  "http://127.0.0.1:8000/quiz-analytics/summary",
+  "https://studygenie-backend-w9am.onrender.com/quiz-analytics/summary",
   {
     headers: {
       Authorization:

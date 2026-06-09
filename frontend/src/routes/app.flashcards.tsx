@@ -35,7 +35,7 @@ function Flashcards() {
         );
 
       const response = await fetch(
-        `http://127.0.0.1:8000/notes/user/${email}`
+        `https://studygenie-backend-w9am.onrender.com/notes/user/${email}`
       );
 
       const data =
@@ -99,7 +99,7 @@ const generateFromContent = async (
 
  
   const response = await fetch(
-    "http://127.0.0.1:8000/flashcards/generate",
+    "https://studygenie-backend-w9am.onrender.com/flashcards/generate",
     {
       method: "POST",
       headers: {

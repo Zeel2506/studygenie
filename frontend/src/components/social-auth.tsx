@@ -17,7 +17,7 @@ export function SocialAuth() {
 
         const user = await googleUser.json();
 
-        const response = await fetch("http://127.0.0.1:8000/auth/google-login", {
+        const response = await fetch("https://studygenie-backend-w9am.onrender.com/auth/google-login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -84,7 +84,7 @@ export function AppSidebar() {
   if (!token) return;
 
   fetch(
-    "http://127.0.0.1:8000/auth/me",
+    "https://studygenie-backend-w9am.onrender.com/auth/me",
     {
       headers: {
         Authorization:

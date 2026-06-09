@@ -38,7 +38,7 @@ function Notes() {
 );
 
 fetch(
-  `http://127.0.0.1:8000/notes/user/${email}`
+  `https://studygenie-backend-w9am.onrender.com/notes/user/${email}`
 )
     .then((res) => res.json())
     .then((data) => {
@@ -143,7 +143,7 @@ const filtered = notes.filter((note) => {
 if (!confirmDelete) return;
 
 await fetch(
-  `http://127.0.0.1:8000/notes/${n._id}`,
+  `https://studygenie-backend-w9am.onrender.com/notes/${n._id}`,
   {
     method: "DELETE",
   }

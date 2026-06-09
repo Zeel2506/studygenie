@@ -31,7 +31,7 @@ const loadNotes = async () => {
       );
 
     const response = await fetch(
-      `http://127.0.0.1:8000/notes/user/${email}`
+      `https://studygenie-backend-w9am.onrender.com/notes/user/${email}`
     );
 
     const data =
@@ -54,7 +54,7 @@ useEffect(() => {
 const generatePlan = async () => {
 
  const response = await fetch(
-  "http://127.0.0.1:8000/planner/generate",
+  "https://studygenie-backend-w9am.onrender.com/planner/generate",
     {
       method: "POST",
       headers: {

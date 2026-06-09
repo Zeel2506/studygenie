@@ -61,7 +61,7 @@ function StudyBuddy() {
     setLoading(true);
 
     const response = await fetch(
-      "http://127.0.0.1:8000/ai/chat",
+      "https://studygenie-backend-w9am.onrender.com/ai/chat",
       {
         method: "POST",
         headers: {
@@ -150,7 +150,7 @@ function StudyBuddy() {
     onClick: async () => {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/notes/save",
+        "https://studygenie-backend-w9am.onrender.com/notes/save",
         {
           method: "POST",
           headers: {

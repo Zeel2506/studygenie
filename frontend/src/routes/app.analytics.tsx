@@ -28,7 +28,7 @@ useState<string[]>([]);
   useEffect(() => {
 
     fetch(
-  "http://127.0.0.1:8000/weak-topics/analyze"
+  "https://studygenie-backend-w9am.onrender.com/weak-topics/analyze"
 )
 .then((res) => res.json())
 .then((data) =>
@@ -38,7 +38,7 @@ useState<string[]>([]);
 );
 
     fetch(
-  "http://127.0.0.1:8000/performance/predict"
+  "https://studygenie-backend-w9am.onrender.com/performance/predict"
 )
 .then((res) => res.json())
 .then((data) =>
@@ -46,7 +46,7 @@ useState<string[]>([]);
 );
 
     fetch(
-  "http://127.0.0.1:8000/achievements/all"
+  "https://studygenie-backend-w9am.onrender.com/achievements/all"
 )
 .then((res) => res.json())
 .then((data) =>
@@ -54,7 +54,7 @@ useState<string[]>([]);
 );
 
     fetch(
-  "http://127.0.0.1:8000/analytics/recommendation"
+  "https://studygenie-backend-w9am.onrender.com/analytics/recommendation"
 )
   .then((res) => res.json())
   .then((data) =>
@@ -64,7 +64,7 @@ useState<string[]>([]);
   );
 
     fetch(
-  "http://127.0.0.1:8000/quiz-analytics/summary"
+  "https://studygenie-backend-w9am.onrender.com/quiz-analytics/summary"
 )
   .then((res) => res.json())
   .then((data) =>
@@ -72,7 +72,7 @@ useState<string[]>([]);
   );
 
     fetch(
-     "http://127.0.0.1:8000/analytics/summary"
+     "https://studygenie-backend-w9am.onrender.com/analytics/summary"
     )
       .then((res) => res.json())
       .then((data) =>

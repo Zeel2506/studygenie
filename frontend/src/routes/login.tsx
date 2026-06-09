@@ -34,7 +34,7 @@ const [loading, setLoading] = useState(false);
     setLoading(true);
 
     const response = await fetch(
-      "http://127.0.0.1:8000/auth/login",
+      "https://studygenie-backend-w9am.onrender.com/auth/login",
       {
         method: "POST",
         headers: {
@@ -61,7 +61,7 @@ const [loading, setLoading] = useState(false);
 );
 
 const userRes = await fetch(
-  "http://127.0.0.1:8000/auth/me",
+  "https://studygenie-backend-w9am.onrender.com/auth/me",
   {
     headers: {
       Authorization: `Bearer ${data.access_token}`

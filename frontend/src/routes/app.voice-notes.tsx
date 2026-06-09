@@ -52,7 +52,7 @@ const [loading, setLoading] = useState(false);
     );
 
     const response = await fetch(
-      "http://127.0.0.1:8000/audio/transcribe",
+      "https://studygenie-backend-w9am.onrender.com/audio/transcribe",
       {
         method: "POST",
         body: formData
@@ -105,7 +105,7 @@ const saveVoiceNote = async () => {
   try {
 
     await fetch(
-      "http://127.0.0.1:8000/notes/save",
+      "https://studygenie-backend-w9am.onrender.com/notes/save",
       {
         method: "POST",
         headers: {

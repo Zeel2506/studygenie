@@ -83,7 +83,7 @@ useState<any>(null);
 
     const response =
       await fetch(
-        "http://127.0.0.1:8000/mindmap/generate",
+        "https://studygenie-backend-w9am.onrender.com/mindmap/generate",
         {
           method: "POST",
           headers: {

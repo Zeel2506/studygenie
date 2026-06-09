@@ -17,7 +17,7 @@ function ChallengesPage() {
   useEffect(() => {
 
     fetch(
-      "http://127.0.0.1:8000/challenges/today"
+      "https://studygenie-backend-w9am.onrender.com/challenges/today"
     )
       .then((res) => res.json())
       .then((data) =>

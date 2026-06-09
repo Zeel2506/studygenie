@@ -88,7 +88,7 @@ const [notes, setNotes] =
     );
 
   const response = await fetch(
-    `http://127.0.0.1:8000/notes/user/${email}`
+    `https://studygenie-backend-w9am.onrender.com/notes/user/${email}`
   );
 
   const data = await response.json();
@@ -146,7 +146,7 @@ console.log("CONTENT SENT TO OLLAMA:");
 console.log(content);
 
     const response = await fetch(
-      "http://127.0.0.1:8000/quiz/generate",
+      "https://studygenie-backend-w9am.onrender.com/quiz/generate",
       {
         method: "POST",
         headers: {
@@ -381,7 +381,7 @@ if (showResult) {
       : score;
 
   await fetch(
-    "http://127.0.0.1:8000/quiz-analytics/save",
+    "https://studygenie-backend-w9am.onrender.com/quiz-analytics/save",
     {
       method: "POST",
       headers: {

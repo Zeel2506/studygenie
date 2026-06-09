@@ -48,7 +48,7 @@ function PDFSummarizerPage() {
 
       const response =
         await fetch(
-          "http://127.0.0.1:8000/pdf/summarize",
+          "https://studygenie-backend-w9am.onrender.com/pdf/summarize",
           {
             method: "POST",
             body: formData,

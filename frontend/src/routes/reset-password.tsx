@@ -76,7 +76,7 @@ function ResetPage() {
 
     const response =
       await fetch(
-        "http://127.0.0.1:8000/auth/reset-password",
+        "https://studygenie-backend-w9am.onrender.com/auth/reset-password",
         {
           method: "POST",
           headers: {

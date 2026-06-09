@@ -17,7 +17,7 @@ function LeaderboardPage() {
   useEffect(() => {
 
     fetch(
-      "http://127.0.0.1:8000/leaderboard/all"
+      "https://studygenie-backend-w9am.onrender.com/leaderboard/all"
     )
       .then((res) => res.json())
       .then((data) =>
