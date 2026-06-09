@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routes.auth import router as auth_router
 from app.routes.ai import router as ai_router
 from app.routes.notes import router as notes_router
-from app.routes.audio import router as audio_router
+#from app.routes.audio import router as audio_router
 from app.routes.flashcards import router as flashcard_router
 from app.routes.quiz import router as quiz_router
 from app.routes.study_buddy import router as study_router
@@ -53,11 +53,11 @@ app.include_router(
     tags=["Notes"]
 )
 
-app.include_router(
-    audio_router,
-    prefix="/audio",
-    tags=["Audio"]
-)
+#app.include_router(
+#    audio_router,
+#    prefix="/audio",
+#    tags=["Audio"]
+#)
 
 app.include_router(
     flashcard_router,
