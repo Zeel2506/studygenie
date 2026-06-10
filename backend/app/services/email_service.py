@@ -13,8 +13,8 @@ def send_email(recipient, subject, body):
     )
 
     sender = {
-        "name": "StudyGenie",
-        "email": "your_verified_email@gmail.com"
+        "name": "zeel",
+        "email": "zeel.25062005@gmail.com"
     }
 
     send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
