@@ -1,11 +1,15 @@
 from fastapi import APIRouter, UploadFile, File
-import whisper
+from groq import Groq
 import os
 from app.services.openai_service import ask_ai
-
+os.makedirs("uploads", exist_ok=True)
 router = APIRouter()
 
-model = whisper.load_model("base")
+
+
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY")
+)
 
 @router.post("/transcribe")
 async def transcribe_audio(
@@ -19,9 +23,15 @@ async def transcribe_audio(
             await file.read()
         )
 
-    result = model.transcribe(filepath)
+    with open(filepath, "rb") as audio_file:
+     transcription = client.audio.transcriptions.create(
+        file=audio_file,
+    
+        model="whisper-large-v3"
+    )
 
-    transcript = result["text"]
+    transcript = transcription.text
+    os.remove(filepath)
 
     summary = ask_ai(
         f"""
