@@ -531,6 +531,12 @@ async def update_profile(
 
     payload = verify_token(token)
 
+    if not payload:
+      raise HTTPException(
+        status_code=401,
+        detail="Invalid Token"
+    )
+
     email = payload["email"]
 
     await db.users.update_one(
