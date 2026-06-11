@@ -15,6 +15,11 @@ async def analytics_summary(
 
     payload = verify_token(token)
 
+    if not payload:
+      return {
+        "error": "Invalid token"
+    }
+
     email = payload["email"]
 
     notes = await db.notes.find(

@@ -6,12 +6,10 @@ router = APIRouter()
 @router.get("/all")
 async def leaderboard():
 
-    users = list(
-        db.users.find(
-            {},
-            {"_id": 0}
-        )
-    )
+    users = await db.users.find(
+        {},
+        {"_id": 0}
+    ).to_list(length=None)
 
     leaderboard_data = []
 
